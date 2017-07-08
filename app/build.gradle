@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.forroom.suhyemin.kimbogyun.songmin"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 24
+        versionName "1.09"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+//            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            debuggable false
+//            jniDebuggable false
+//            zipAlignEnabled true
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/google-play-services.jar')
+    compile files('libs/cardboard.jar')
+    compile files('libs/libprotobuf-java-2.3-nano.jar')
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.tsengvn:Typekit:1.0.0'
+    compile 'com.flipboard:bottomsheet-core:1.5.0'
+    compile 'com.flipboard:bottomsheet-commons:1.5.0'
+    compile 'com.munon:turboimageview:1.2.0'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.squareup.okhttp3:okhttp:3.1.2'
+    compile 'com.facebook.android:facebook-android-sdk:4.10.0'
+    compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+}

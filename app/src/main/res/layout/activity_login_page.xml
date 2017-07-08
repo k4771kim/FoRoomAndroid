@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_loginpage"
+    android:gravity="center"
+
+    >
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rel1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="30dp"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:src="@drawable/loginpage_logo" />-->
+    <!--</RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#00ffffff"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="21dp"
+            android:background="@drawable/login_title" />
+
+        <EditText
+            android:id="@+id/login_id_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_email_box"
+            android:gravity="center_vertical"
+            android:hint="이메일"
+            android:paddingLeft="15dp"
+            android:textColorHint="#a0a0a0"
+            android:textSize="12dp" />
+
+
+        <EditText
+            android:id="@+id/login_pw_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/login_box"
+            android:gravity="center_vertical"
+            android:hint="비밀번호"
+            android:paddingLeft="15dp"
+            android:password="true"
+            android:textColorHint="#a0a0a0"
+            android:textSize="12dp" />
+
+
+        <ImageButton
+
+            android:id="@+id/email_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/emailloginclick" />
+
+
+        <ImageButton
+            android:id="@+id/facebook_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/facebookclick" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="43dp"
+            android:background="@drawable/or_line" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/join_title"
+
+            />
+
+        <ImageButton
+            android:id="@+id/email_join_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/emailjoinclick" />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="80dp"
+            android:background="#00ffffff"/>
+    </LinearLayout>
+</RelativeLayout>

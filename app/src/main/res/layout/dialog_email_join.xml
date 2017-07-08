@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_kbg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_joindialog"
+    android:orientation="vertical"
+>
+
+
+    <LinearLayout
+        android:background="#00ffffff"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/singup_title" />
+
+        <EditText
+            android:id="@+id/login_login_email_text"
+            android:alpha = "0.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/login_box"
+            android:hint="이메일"
+            android:paddingLeft="15dp"
+            android:textColorHint="#a0a0a0"
+            android:textSize="12sp" />
+
+        <EditText
+            android:alpha="0.6"
+            android:id="@+id/login_login_password_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/login_box"
+            android:hint="비밀번호 (4글자 이상)"
+            android:password="true"
+            android:paddingLeft="15dp"
+            android:textColorHint="#a0a0a0"
+            android:textSize="12sp" />
+
+
+        <EditText
+            android:id="@+id/login_login_password_check_text"
+            android:alpha="0.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_box"
+            android:hint="비밀번호 확인"
+            android:password="true"
+            android:paddingLeft="15dp"
+            android:textSize="12sp" />
+
+
+        <EditText
+            android:alpha="0.6"
+            android:id="@+id/login_login_hhh_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/login_box"
+            android:hint="닉네임"
+            android:paddingLeft="15dp"
+            android:textColorHint="#a0a0a0"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:alpha="0.6"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/login_login_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_join_cancel"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/login_login_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_join_ok"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Foroom</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello Foroom Blank fragment</string>
+    <string name="title_activity_wish_room_info">WishRoom_info</string>
+    <string name="facebook_app_id">850598825048716</string>
+    <!--<string name="facebook_app_id">1717579675233303</string>-->
+</resources>

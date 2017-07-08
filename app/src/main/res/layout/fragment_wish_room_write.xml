@@ -1,0 +1,171 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/wr_write_NestedScrollView" >
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.forroom.suhyemin.kimbogyun.songmin.fragment.WishRoomWriteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wr_write_sofa_btn"
+            android:src="@drawable/icon_sofa"
+            android:layout_weight="1"
+            android:background="#00ffffff" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wr_write_chair_btn"
+            android:src="@drawable/icon_chair"
+            android:layout_weight="1"
+            android:background="#00ffffff" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wr_write_desk_btn"
+            android:src="@drawable/icon_desk"
+            android:layout_weight="1"
+            android:background="#00ffffff" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wr_write_kitchen_btn"
+            android:src="@drawable/icon_kitchentable"
+            android:layout_weight="1"
+            android:background="#00ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wr_write_sofatable_btn"
+            android:src="@drawable/icon_sofatable"
+            android:layout_weight="1"
+            android:background="#00ffffff" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wr_write_dressingtable_btn"
+            android:src="@drawable/icon_dressingtable"
+            android:layout_weight="1"
+            android:background="#00ffffff" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wr_write_bed_btn"
+            android:src="@drawable/icon_bed"
+            android:layout_weight="1"
+            android:background="#00ffffff"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wr_write_closet_btn"
+            android:src="@drawable/icon_closet"
+            android:layout_weight="1"
+            android:background="#00ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wr_write_lamp_btn"
+            android:src="@drawable/icon_lamp"
+            android:layout_weight="1"
+            android:background="#00ffffff" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wr_write_shelf_btn"
+            android:src="@drawable/icon_shelf"
+            android:layout_weight="1"
+            android:background="#00ffffff" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wr_write_curtain_btn"
+            android:src="@drawable/icon_curtain"
+            android:layout_weight="1"
+            android:background="#00ffffff" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wr_write_deco_btn"
+            android:src="@drawable/icon_deco"
+            android:layout_weight="1"
+            android:background="#00ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wr_write_color"
+            android:layout_weight="1"
+            android:src="@drawable/btn_color" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wr_write_pattern"
+            android:layout_weight="1"
+            android:src="@drawable/btn_pattern" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wr_write_style"
+            android:layout_weight="1"
+            android:src="@drawable/btn_style" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wr_write_etc"
+            android:layout_weight="1"
+            android:src="@drawable/btn_etc" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

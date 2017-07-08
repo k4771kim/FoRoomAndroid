@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scrap">
+        <item >매거진</item>
+        <item >마이룸</item>
+        <item >위시룸</item>
+    </string-array>
+    <string-array name="write">
+        <item >마이룸</item>
+        <item >위시룸</item>
+    </string-array>
+</resources>

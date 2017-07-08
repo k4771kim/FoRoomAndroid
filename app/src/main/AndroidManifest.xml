@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.forroom.suhyemin.kimbogyun.songmin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--GCM Settings-->
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.google.android.gcm.demo.app.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission
+        android:name="com.google.android.gcm.demo.app.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+
+
+
+
+    <!-- <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> -->
+    <application
+        android:name=".ForRoomApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ForRoom">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.forroom.suhyemin.kimbogyun.songmin.ForRoomGlideModule"
+            android:value="GlideModule" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider850598825048716"
+            android:exported="true" >
+        </provider>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".WishRoom_info"
+            android:label="@string/title_activity_wish_room_info"
+            android:theme="@style/Theme.ForRoom" />
+        <activity android:name=".CommentActivity" />
+        <activity android:name=".profilePage.ProfileActivity" />
+        <activity android:name=".Magazine_info_Activity" />
+        <activity android:name=".WishRoomWriteActivity" />
+        <activity android:name=".MyRoom_info" />
+        <activity android:name=".MyRoomWriteActivity" />
+        <activity android:name=".ForRoomFilter" />
+        <activity
+            android:name=".vrActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity android:name=".PhotoActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                , ,
+                <data android:mimeType="application/vnd.google.panorama360+jpg" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GalleryActivity" />
+        <activity android:name=".GoodsItemsActivity" />
+        <activity android:name=".GoodsItemListActivity" />
+        <activity android:name=".MyRoomImageTagActivity" />
+        <activity android:name=".FoRoomLoginActivity"/>
+        <activity android:name=".Login_Auth_Activity"/>
+        <activity android:name=".profilePage.ConfigActivity"/>
+
+        <!--GCM Setting-->
+        <receiver
+            android:name=".gcm.foroomGCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.google.android.gcm.demo.app" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".gcm.foroomGCMIntentService" />
+    </application>
+
+</manifest>

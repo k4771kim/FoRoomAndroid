@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.DesignDemo" parent="Theme.ForRoom"></style>
+
+    <style name="Theme.ForRoom" parent="Theme.AppCompat.Light.NoActionBar">
+         Customize your theme here.
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name = "android:background">@color/colorwhite</item>
+        <!--<item name="android:toolbarStyle">@style/ToolbarStyle</item>-->
+        <item name="toolbarStyle">@style/ToolbarStyle</item>
+    </style>
+
+    <!--<style name="FontTheme" parent="Theme.ForRoom">-->
+        <!--<item name="android:typeface">d</item>-->
+    <!--</style>-->
+
+
+
+
+
+    <style name="ToolbarStyle" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <!--<item name="android:contentInsetStart">0dp</item>-->
+    </style>
+
+    <style name="widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+
+    <style name="Theme.ForRoom.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ForRoom.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="MyTabLayoutTextAppearance2" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">#ffffffff</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="MySpinnerTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">#ffffffff</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+</resources>

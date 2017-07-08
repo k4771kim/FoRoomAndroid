@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_marginTop="27dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Tag"
+            android:id="@+id/textView12"
+            android:layout_marginTop="13dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="33dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#505050"
+            android:id="@+id/tag_detail_text"
+            android:textSize="16sp"
+            android:text="이케아에서 43900원에 구매"
+            />
+    </LinearLayout>
+
+
+        <ImageButton
+            android:layout_marginTop="47dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tag_detial_exit"
+            android:background="@drawable/btn_close" />
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9B9B9B"
+            android:text="2016/01/24"
+            android:id="@+id/mr_info_date_text"
+            android:textSize="10sp" />
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jongsin&apos;s style"
+            android:id="@+id/mr_info_nick_text"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="14dp" />
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:id="@+id/mr_info_title_text"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9B9B9B"
+
+                android:id="@+id/mr_info_hash1_text"
+                android:textIsSelectable="false"
+                android:textSize="13sp" />
+<!--                android:textAppearance="?android:attr/textAppearanceSmall"-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9B9B9B"
+                android:id="@+id/mr_info_hash2_text"
+                android:textSize="13sp"
+                android:layout_marginLeft="7dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9B9B9B"
+                android:id="@+id/mr_info_hash3_text"
+                android:textSize="13sp"
+                android:layout_marginLeft="7dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:id="@+id/mr_info_profile"
+            android:layout_marginRight="12dp" />
+    </LinearLayout>
+</LinearLayout>

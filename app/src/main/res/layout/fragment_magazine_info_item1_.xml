@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.forroom.suhyemin.kimbogyun.songmin.fragment.Magazine_Info_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/magazine_info_image1"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="2016 / 01 / 24"
+            android:id="@+id/magazine_info_date"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="북유럽 스타일"
+            android:id="@+id/magazine_info_title"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="모노톤 컬러에 스케인레스, 유리, 스킬 등 딱딱한 느낌을 주는 제질을 사용하고 무늬가 없이 광택이 나는 마감처리를 한다. 직선이나 비정형 곡선의 형태를 이용하고 회색이나 기타 어두운 톤의 색들이 첨가된다. 모노톤 컬러에 스케인레스, 유리, 스킬 등 딱딱한 느낌을 주는 재질을 사용하고 무늬가 없이 광택이 나는 마감처리를 한다."
+            android:id="@+id/magazine_info_text1"
+            android:textSize="13sp"
+            android:layout_marginTop="13dp"
+            android:lineSpacingExtra="8dp" />
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
