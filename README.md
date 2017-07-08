@@ -116,7 +116,9 @@
 ### Develop by 김보균, 서혜민, 송민
  
  김보균 : Backend(Node.js, MongoDB), Admin Page, Android
+ 
  서혜민 : Planning, Design
+ 
  송민 : Android, 귀요미
 
   [1]: https://play.google.com/store/apps/details?id=com.forroom.suhyemin.kimbogyun.songmin
